@@ -1,7 +1,7 @@
 Detta är en Node.js applikation som räknar hur ofta ord förekommer i en sträng. 
 
 För att köra programmet behöver du efter kloning köra kommandot "npm install" i terminalen för att installera nödvändiga beroenden. 
-För att starta servern används kommandom "node app.js"
+För att starta servern används kommandom "npm start"
 
 Det finns en http-fil som kan användas för att testa olika anrop. 
 
