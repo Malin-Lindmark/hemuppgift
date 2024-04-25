@@ -15,12 +15,10 @@ app.get("/", (req, res) => {
  * @throws {Error} If something goes wrong while trying to get the top 10.
  */
 function getTopTenFrequentWords(data) {
-  console.log(data);
   try {
     let words = Object.entries(data);
     words.sort((a, b) => b[1] - a[1]);
     words = words.slice(0, 10);
-    console.log(words);
     return Object.fromEntries(words);
   } catch (error) {
     console.error("Failed to get top ten frequent words: ", error);
@@ -55,7 +53,6 @@ function wordFrequencys(data) {
 }
 
 app.post("/frequency", (req, res) => {
-  console.log(req.body);
   try {
     const data = req.body.data;
     if (!data) {
