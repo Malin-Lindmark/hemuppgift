@@ -1,0 +1,44 @@
+### Test POST request
+// POST request to /post-endpoint
+// Expexted HTTP response code: 200
+// Expected respone: an object with the words and their frequency
+POST http://localhost:3000/frequency HTTP/1.1
+content-type: application/json
+
+{
+  "data": "Banan Äpple Katt Hund Banan Hund Katt Hund"
+}
+### Test POST request
+// POST request to /post-endpoint
+// Expexted HTTP response code: 200
+// Expected respone: an object with the words and their frequency
+POST http://localhost:3000/frequency HTTP/1.1
+content-type: application/json
+
+{
+  "data": "Banan Banan Banan Banan Banan Banan Banan Banan Banan"
+}
+### Test POST request
+// POST request to /post-endpoint
+// Expexted HTTP response code: 200
+// Expected respone: an object with the words and their frequency 
+POST http://localhost:3000/frequency HTTP/1.1
+content-type: application/json
+
+{
+  "data": "Banan: Äpple! Katt? Hund- Banan, Hund.. Katt- Hund?"
+}
+### Test POST request
+// POST request to /post-endpoint
+// Expexted HTTP response code: 200
+// Expected respone: an object with the words and their frequency 
+POST http://localhost:3000/frequency HTTP/1.1
+content-type: application/json
+
+{
+  "data": "Inte ett moln Så långt ögat kan nå Inte en droppe regn På flera dar Med en glass i min mun å i sandaler av plast Går jag i solen Och tänker på dig Ljusblåa dagar Seglar förbi Sommaren är kort De mesta regnar bort Men nu är den här Så ta för dig Solen skiner idag Hösten kommer snart De går med vindens fart Så lyssna på mig Solen skiner Kanske bara idag Vattnet är varmt Och luften står still Jag sitter i skuggan Läser gårdagens blad Snart är det dags För ett hopp i de blå Få bort sanden mellan tårna å svalka min kropp Sommaren är kort De mesta regnar bort Men nu är den här Så ta för dig Solen skiner idag Hösten kommer snart De går med vindens fart Så lyssna på mig Solen skiner Kanske bara idag Nananana Nanana Nanana Nanana Nanana Sommaren är kort Det mesta regnar bort Men nu är den här Solen skiner Kanske bara idag"
+}
+
+
+
+
