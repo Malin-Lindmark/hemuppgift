@@ -6,6 +6,7 @@ För att starta servern används kommandom "npm run"
 Det finns en http-fil som kan användas för att testa olika anrop. 
 
 För testning i kommandotolken kan följande curl-anrop användas:
+
 **OBS: Code-formatet måste användas**
 
 curl -X POST -H "Content-Type: application/json" -d "{\"data\":\"Banan Äpple Katt Hund Banan Hund Katt Hund\"}" http://localhost:3000/frequency
