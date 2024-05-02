@@ -9,18 +9,17 @@ För testning i kommandotolken kan följande curl-anrop användas:
 
 **OBS: Code-formatet måste användas**
 
-curl -X POST -H "Content-Type: application/json" -d "{\"data\":\"Banan Äpple Katt Hund Banan Hund Katt Hund\"}" http://localhost:3000/frequency
+curl -X POST -H "Content-Type: text/plain" -d "Banan, Äpple, Katt. Hund- Banan: Hund! Katt? Hund" http://localhost:3000/frequency
 
-curl -X POST -H "Content-Type: application/json" -d "{\"data\":\"Banan, Äpple, Katt. Hund- Banan: Hund! Katt? Hund\"}" http://localhost:3000/frequency
+curl -X POST -H "Content-Type: text/plain" -d "Banan, banan, Katt, katt, katt" http://localhost:3000/frequency
 
-curl -X POST -H "Content-Type: application/json" -d "{\"data\":\"Inte ett moln Så långt ögat kan nå Inte en droppe regn På flera dar Med en glass i min mun å i sandaler av plast\"}" http://localhost:3000/frequency
+För testning i Postman kan någon av följande skickas in i bodyn: 
 
-För testning i Postman kan följande body användas: 
+Banan Äpple Katt Hund Banan Hund Katt Hund
 
-{
-"data": "Banan Äpple Katt Hund Banan Hund Katt Hund"
-}
+Vi finner bättre sätt att utveckla programvara genom att utveckla själva och hjälpa andra att utveckla. Genom detta arbete har vi kommit att värdesätta: Individer och interaktioner framför processer och verktyg Fungerande programvara framför omfattande dokumentation Kundsamarbete framför kontraktsförhandling Anpassning till förändring framför att följa en plan Det vill säga, medan det finns värde i punkterna till höger,värdesätter vi punkterna till vänster mer.
 
-{
-"data": "Vi finner bättre sätt att utveckla programvara genom att utveckla själva och hjälpa andra att utveckla. Genom detta arbete har vi kommit att värdesätta: Individer och interaktioner framför processer och verktyg Fungerande programvara framför omfattande dokumentation Kundsamarbete framför kontraktsförhandling Anpassning till förändring framför att följa en plan Det vill säga, medan det finns värde i punkterna till höger,värdesätter vi punkterna till vänster mer."
-}
+För att köra enhetstester används kommandot "npm test". 
+Om det mot förmodan inte installerats rätt beroenden vid start kan kommandot "npm install --save -dev jest" köras. Testa sedan kommandot "npm test" igen. 
+
+Det är endast två testfall implementerade och båda ska bli godkända. 
